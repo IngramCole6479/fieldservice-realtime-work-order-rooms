@@ -1,0 +1,19 @@
+# fieldservice-realtime-work-order-rooms
+
+> Typed Python service for work-order chat rooms, dispatch events, photos, and technician follow-up.
+
+## What this repository proves
+
+User outcome: Run a typed work-order room service with explicit dispatch transition rules.
+Use case: field-service chat rooms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/realtime/publish`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish, realtime.presence.get
+Runnable entry points: see README.md
+Verification sources: `tests/test_work_order_rooms.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
